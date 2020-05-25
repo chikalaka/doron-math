@@ -1,0 +1,111 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.numbers > * + * {
+  margin-left: 50px;
+}
+
+.alert {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alertMessageContainer {
+  font-size: 35px;
+  background-color: #eceff1;
+  height: 150px;
+  width: 150px;
+  opacity: 0.8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.hint {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 100px;
+  padding: 0 2px;
+}
+
+.lines {
+  display: flex;
+  position: absolute;
+  top: -35px;
+}
+
+.lines > * + * {
+  margin-left: 15px;
+}
+
+.line {
+  height: 30px;
+  width: 4px;
+  background-color: black;
+  border-radius: 100px;
+  /*border: 2px solid black;*/
+}
+
+.lineSubtracted {
+  /*border-color: red;*/
+  background-color: red;
+}
+
+.numContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.num {
+}
+
+.matrix {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.matrixNum {
+  font-size: 35px;
+  width: 90px;
+  height: 90px;
+  border: 2px solid darkcyan;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alertMessage {
+  direction: rtl;
+}
